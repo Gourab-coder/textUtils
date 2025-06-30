@@ -1,0 +1,130 @@
+/* Root container */
+#test_div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4vh 2vw;
+    background-color: #57C5F7; /* Sky Blue */
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+/* Text display container */
+#test_text_div {
+    background-color: #FFFACD; /* Soft Yellow */
+    color: #333;
+    height: 20vh;
+    width: 70vw;
+    padding: 2vh 2vw;
+    margin-bottom: 3vh;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    overflow-y: auto;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Input box */
+#test_inp {
+    height: 6vh;
+    width: 50vw;
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    border: 2px solid #FF8A8A; /* Vivid Red */
+    border-radius: 8px;
+    background-color: #FFC1C1; /* Blush Pink */
+    color: #000;
+    outline: none;
+    margin-bottom: 3vh;
+    transition: 0.3s ease;
+}
+
+#test_inp:focus {
+    border-color: #FF8A8A;
+}
+
+/* Stats container */
+#test_stats_div {
+    background-color: #FFC1C1; /* Blush Pink */
+    border-radius: 10px;
+    width: 70vw;
+    margin: 1vh 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Individual stats */
+#test_stats_speed {
+    background-color: #E74C3C; /* Vivid Red */
+    color: white;
+    padding: 1vh 1vw;
+    border-radius: 8px;
+    min-width: 10vw;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Character accuracy styling */
+.correct {
+    color: green;
+    font-weight: bold;
+}
+.incorrect {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Reset button */
+#test_reset_btn {
+    background-color: #E74C3C;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+#test_reset_btn:hover {
+    background-color: #c0392b;
+}
+
+/* Radio buttons */
+input[type='radio'] {
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+label {
+    margin: 0 1rem;
+    font-weight: 500;
+}
+
+#test_back_body {
+  background-color: #E74C3C;           /* Matching accent red */
+  color: white;
+  text-decoration: none;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+  align-self: flex-start;
+}
+
+#test_back_body:hover {
+  background-color: #c0392b;           /* Darker on hover */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
